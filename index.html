@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container ">
+    <div class="input b">
+      <form action="" name='form'>
+        <input type="text" name='textview' readonly>
+      </form>
+    </div>
+    
+	<div class="cont-1 center w100">
+		<div class="w100">
+			<div class="space-between cont-1-item">
+				<div class="item h clean" onclick="clean()">C</div>
+				<div class="item h" onclick="insert('(')">(</div>
+				<div class="item h" onclick="insert(')')">)</div>
+			</div>
+			<div class="space-between">
+				<div class="item h" onclick="insert('7')">7</div>
+				<div class="item h" onclick="insert('8')">8</div>
+				<div class="item h" onclick="insert('9')">9</div>
+			</div>
+			<div class="space-between">
+				<div class="item h" onclick="insert('4')">4</div>
+				<div class="item h" onclick="insert('5')">5</div>
+				<div class="item h" onclick="insert('6')">6</div>
+			</div>
+			<div class="space-between">
+				<div class="item h" onclick="insert('1')">1</div>
+				<div class="item h" onclick="insert('2')">2</div>
+				<div class="item h" onclick="insert('3')">3</div>
+			</div>
+			<div class="space-between">
+				<div class="item h back" onclick="back()">&larr;</div>
+				<div class="item h zero" onclick="insert('0')">0</div>
+				<div class="item h" onclick="insert('.')">.</div>
+			</div>
+		</div>
+			
+		<div class="cont-2 w100">
+			<div class="item h" onclick="insert('*')">&times;</div>
+			<div class="item h" onclick="insert('/')">&divide;</div>
+			<div class="item h" onclick="insert('-')">-</div>
+			<div class="item h" onclick="insert('+')">+</div>
+			<div class="item h equal" onclick="equal()">=</div>
+		</div>
+	</div>
+    
+  </div>
+  <script src="app.js"></script>
+</body>
+
+
+
+
+</html>
